@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sacred Heart Academy — Burlington, CO</title>
+  <meta name="description" content="Sacred Heart Academy is a traditional Catholic K–12 school in Burlington, Colorado, operated by the Congregation of Mary Immaculate Queen (CMRI)." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    Rooted in Faith &nbsp;·&nbsp; Dedicated to Academic Excellence &nbsp;·&nbsp; Grades K–12 &nbsp;·&nbsp; Burlington, Colorado
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-logo">
+      <span class="cross">✝</span> Sacred Heart Academy
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
+      <li><a href="#" onclick="showPage('contact')" id="nav-contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════
+       HOME PAGE
+  ═══════════════════════════════ -->
+  <div id="page-home" class="page active">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="School photo and welcome">
+      <img
+        src="images/Full_School25.jpg"
+        alt="Sacred Heart Academy students and faculty gathered in front of the school building"
+        class="hero-img"
+      />
+      <div class="hero-content">
+        <p class="hero-eyebrow">A CMRI Traditional Catholic School</p>
+        <div class="hero-cross">✝</div>
+        <h1>Sacred Heart Academy</h1>
+        <p class="hero-tagline">"Train up a child in the way he should go." — Proverbs 22:6</p>
+        <a href="#" onclick="showPage('contact')" class="btn btn-outline-white">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- MISSION CARDS -->
+    <section class="section" aria-labelledby="mission-heading">
+      <div class="section-header">
+        <h2 id="mission-heading">Our Mission</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="card-grid">
+        <div class="mission-card">
+          <span class="icon">✝</span>
+          <h3>Catholic Faith</h3>
+          <p>Grounded in the Traditional Latin Mass and the timeless teachings of the Catholic Church as handed down through the ages.</p>
+        </div>
+        <div class="mission-card">
+          <span class="icon"><i class="ti ti-book" aria-hidden="true"></i></span>
+          <h3>Academic Excellence</h3>
+          <p>A rigorous classical curriculum preparing students for higher education and a life of virtue, wisdom, and service.</p>
+        </div>
+        <div class="mission-card">
+          <span class="icon"><i class="ti ti-users" aria-hidden="true"></i></span>
+          <h3>Community</h3>
+          <p>A close-knit school family united in faith, mutual support, and a shared love of truth and learning.</p>
+        </div>
+        <div class="mission-card">
+          <span class="icon"><i class="ti ti-star" aria-hidden="true"></i></span>
+          <h3>Grades K–12</h3>
+          <p>Nurturing every student from kindergarten through graduation — forming young men and women in mind, body, and soul.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-cream" aria-labelledby="about-heading">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 id="about-heading">About Sacred Heart Academy</h2>
+          <p>Sacred Heart Academy is a traditional Catholic school located in Burlington, Colorado, operated by the Congregation of Mary Immaculate Queen (CMRI). We offer a full K–12 classical education deeply rooted in the Catholic faith, the Traditional Latin Mass, and the message of Our Lady of Fatima.</p>
+          <p>Our dedicated teachers and religious sisters guide students in the pursuit of wisdom, virtue, and knowledge — forming young men and women who are prepared to serve God, their families, and society with integrity and purpose.</p>
+          <p>We welcome families seeking a faithful, academically rigorous alternative to modern education. Our school is small by design, allowing every student to receive personal attention and to grow in a truly Catholic environment.</p>
+          <a href="#" onclick="showPage('contact')" class="btn btn-gold" style="margin-top:0.5rem; display:inline-block;">Get in Touch</a>
+        </div>
+        <div class="about-quote-block">
+          <blockquote>
+            "The purpose of Catholic education is not merely to prepare students for the workplace, but to form souls for eternity — instilling virtue, cultivating wisdom, and ordering all things toward God."
+          </blockquote>
+          <cite>— Sacred Heart Academy</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANNOUNCEMENTS -->
+    <section class="section" aria-labelledby="news-heading">
+      <div class="section-header">
+        <h2 id="news-heading">News &amp; Announcements</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="announce-grid">
+        <div class="announce-item">
+          <span class="announce-date">Aug 25</span>
+          <p>First day of the 2025–2026 school year. Welcome back, students and families!</p>
+        </div>
+        <div class="announce-item">
+          <span class="announce-date">Sep 8</span>
+          <p>Feast of the Nativity of Our Lady — Holy Mass at 8:00 AM. All are welcome.</p>
+        </div>
+        <div class="announce-item">
+          <span class="announce-date">Oct 4</span>
+          <p>Open House for prospective families. Please contact us to reserve your spot.</p>
+        </div>
+        <div class="announce-item">
+          <span class="announce-date">Nov 1</span>
+          <p>All Saints Day — School Holiday. Holy Mass schedule posted on the parish website.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CMRI AFFILIATION BANNER -->
+    <section class="section section-navy" aria-label="CMRI affiliation">
+      <div class="section-header">
+        <h2 style="color:#fff;">Part of the CMRI Family of Schools</h2>
+        <div class="section-rule"></div>
+      </div>
+      <p style="text-align:center; color:#a8bdd0; font-size:14px; max-width:600px; margin:0 auto 1.5rem;">
+        Sacred Heart Academy is proudly affiliated with the Congregation of Mary Immaculate Queen — a traditional Catholic congregation of priests, Brothers, and Sisters dedicated to preserving the Catholic Faith and the Traditional Latin Mass.
+      </p>
+      <div style="text-align:center;">
+        <a href="https://cmri.org" target="_blank" rel="noopener" class="btn btn-outline-white">Visit CMRI.org</a>
+      </div>
+    </section>
+
+  </div><!-- end #page-home -->
+
+
+  <!-- ═══════════════════════════════
+       CONTACT PAGE
+  ═══════════════════════════════ -->
+  <div id="page-contact" class="page">
+
+    <div class="page-hero">
+      <h1>Contact Us</h1>
+      <p>We welcome your questions and look forward to hearing from you.</p>
+    </div>
+
+    <section class="section" aria-label="Contact information and form">
+      <div class="contact-grid">
+
+        <!-- INFO -->
+        <div class="contact-info">
+          <h3>Sacred Heart Academy</h3>
+
+          <div class="contact-detail">
+            <i class="ti ti-map-pin ci-icon" aria-hidden="true"></i>
+            <div>
+              <strong>Address</strong>
+              228 11th Street<br>Burlington, CO 80807
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <i class="ti ti-phone ci-icon" aria-hidden="true"></i>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:7193430091">(719) 343-0091</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <i class="ti ti-mail ci-icon" aria-hidden="true"></i>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:immaculateccc@hotmail.com">immaculateccc@hotmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <i class="ti ti-clock ci-icon" aria-hidden="true"></i>
+            <div>
+              <strong>School Hours</strong>
+              Monday – Friday<br>8:00 AM – 3:30 PM
+            </div>
+          </div>
+
+          <div class="map-placeholder" role="img" aria-label="Map location placeholder">
+            <i class="ti ti-map" aria-hidden="true"></i>
+            228 11th Street, Burlington, CO
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form onsubmit="handleSubmit(event)" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="First and last name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic…</option>
+                <option>General Question</option>
+                <option>Enrollment / Admissions</option>
+                <option>School Calendar</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold" style="width:100%;">Send Message</button>
+            <p id="form-success" style="display:none; margin-top:1rem; color:#3b6d11; font-size:14px; text-align:center;">
+              ✓ Thank you! We'll be in touch soon.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- end #page-contact -->
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-cross">✝</div>
+    <p class="footer-name">Sacred Heart Academy</p>
+    <div class="footer-details">
+      228 11th Street, Burlington, CO 80807<br>
+      <a href="tel:7193430091">(719) 343-0091</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:immaculateccc@hotmail.com">immaculateccc@hotmail.com</a>
+    </div>
+    <p class="footer-copy">
+      © 2025 Sacred Heart Academy. All rights reserved.
+      &nbsp;·&nbsp;
+      Affiliated with <a href="https://cmri.org" target="_blank" rel="noopener">CMRI</a>
+    </p>
+  </footer>
+
+  <script>
+    function showPage(name) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+      document.getElementById('page-' + name).classList.add('active');
+      const navLink = document.getElementById('nav-' + name);
+      if (navLink) navLink.classList.add('active');
+      document.getElementById('nav-links').classList.remove('open');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return false;
+    }
+
+    function toggleNav() {
+      document.getElementById('nav-links').classList.toggle('open');
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      }, 800);
+    }
+  </script>
+
+</body>
+</html>
