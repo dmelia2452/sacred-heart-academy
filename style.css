@@ -113,17 +113,14 @@ img { max-width: 100%; display: block; }
 /* ── HERO ── */
 .hero {
   position: relative;
-  height: 520px;
+  height: 620px;
   overflow: hidden;
   border-bottom: 4px solid var(--gold);
-}
-
-.hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
-  filter: brightness(0.5);
+  background-image: linear-gradient(rgba(0,0,0,0.52), rgba(0,0,0,0.52)),
+                    url('images/Full_School25.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  background-attachment: fixed;
 }
 
 .hero-content {
@@ -498,7 +495,11 @@ img { max-width: 100%; display: block; }
   }
   .nav-links a { padding: 10px 0; border-bottom: 0.5px solid rgba(255,255,255,0.1); }
   .nav-toggle { display: flex; }
-  .hero { height: 400px; }
+  .hero {
+    height: 480px;
+    background-attachment: scroll;
+    background-position: center 20%;
+  }
   .about-grid,
   .contact-grid { grid-template-columns: 1fr; }
   .section { padding: 3rem 1.25rem; }
